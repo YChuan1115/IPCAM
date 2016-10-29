@@ -1,0 +1,2 @@
+view.php 放到mjpg streamer的「www」資料夾
+photo和index.html放到/var/www資料夾

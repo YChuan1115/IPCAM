@@ -1,0 +1,83 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARM	ipcam_server.c	24;"	d	file:
+Angle	msg.h	/^}Angle;$/;"	t	typeref:struct:__anon2
+BUF_SIZE	ipcam_server.c	66;"	d	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CMD_PAN_MINUS	msg.h	15;"	d
+CMD_PAN_PLUS	msg.h	14;"	d
+CMD_PAN_SET	msg.h	13;"	d
+CMD_PAN_TILT_SET	msg.h	19;"	d
+CMD_TILT_MINUS	msg.h	18;"	d
+CMD_TILT_PLUS	msg.h	17;"	d
+CMD_TILT_SET	msg.h	16;"	d
+DEVICE_BLTEST	ipcam_server.c	20;"	d	file:
+ERROR	msg.h	/^   ERROR,$/;"	e	enum:STATUS
+EV_Handler	ipcam_server.c	/^typedef int (*EV_Handler) (void * arg);$/;"	t	file:
+KEY1	ipcam_server.c	54;"	d	file:
+KEY2	ipcam_server.c	55;"	d	file:
+KEY3	ipcam_server.c	56;"	d	file:
+KEY4	ipcam_server.c	57;"	d	file:
+KEY5	ipcam_server.c	58;"	d	file:
+KEY6	ipcam_server.c	59;"	d	file:
+KEY7	ipcam_server.c	60;"	d	file:
+KEY8	ipcam_server.c	61;"	d	file:
+KEYNUM	ipcam_server.c	62;"	d	file:
+KEYPAD_DEVICE	ipcam_server.c	29;"	d	file:
+KEYPAD_DEVICE	ipcam_server.c	31;"	d	file:
+KEY_ACTION_MAP	ipcam_server.c	/^} KEY_ACTION_MAP;$/;"	t	typeref:struct:__anon1	file:
+MAX	ipcam_server.c	65;"	d	file:
+MAX_CLIENT	unixsock.h	11;"	d
+MIN	ipcam_server.c	64;"	d	file:
+MOVE_STEP	ipcam_server.c	67;"	d	file:
+OK	msg.h	/^   OK=0,$/;"	e	enum:STATUS
+POLLTIME	ipcam_server.c	27;"	d	file:
+PWM_DEVICE	ipcam_server.c	69;"	d	file:
+STATUS	msg.h	/^ enum STATUS{$/;"	g
+Servo_Socket	msg.h	20;"	d
+UNKNOWN	msg.h	/^   UNKNOWN,$/;"	e	enum:STATUS
+__msg_h__	msg.h	5;"	d
+__unixsock_h__	unixsock.h	9;"	d
+angle	ipcam_server.c	/^Angle angle;$/;"	v
+angle	msg.h	/^         Angle angle;$/;"	m	struct:msg_control
+arg	msg.h	/^	  char arg;$/;"	m	struct:msg_control
+client_sock	unixsock.c	/^  int client_sock[MAX_CLIENT];$/;"	v
+client_sock_idx	unixsock.c	/^  int client_sock_idx=0;$/;"	v
+close_socket	unixsock.c	/^int close_socket(int sock)$/;"	f
+cmd	msg.h	/^  	 int cmd;$/;"	m	struct:msg_control
+data	msg.h	/^     char data[16];$/;"	m	struct:msg_report
+degree	client_unix.c	/^int degree=-1;$/;"	v
+error_code	msg.h	/^     int error_code;$/;"	m	struct:msg_report
+fd_pwm	ipcam_server.c	/^ int fd_pwm; \/\/for pwm device$/;"	v
+get_free_idx	unixsock.c	/^int  get_free_idx() $/;"	f
+get_keycode	ipcam_server.c	/^char get_keycode(int fd)$/;"	f
+handle_keyevent	ipcam_server.c	/^void handle_keyevent(char key)$/;"	f
+handler	ipcam_server.c	/^  EV_Handler handler;$/;"	m	struct:__anon1	file:
+horizontal	msg.h	/^  int horizontal;$/;"	m	struct:__anon2
+key_action	ipcam_server.c	/^KEY_ACTION_MAP key_action[KEYNUM]={$/;"	v
+keycode	ipcam_server.c	/^  char keycode;$/;"	m	struct:__anon1	file:
+main	client_unix.c	/^int main(int argc,char **argv)$/;"	f
+main	ipcam_server.c	/^int main(int argc, char *argv[]) {$/;"	f
+motor_turn	ipcam_server.c	/^int motor_turn(int h, int v)$/;"	f
+msg_control	msg.h	/^ struct msg_control {$/;"	s
+msg_report	msg.h	/^ struct msg_report {$/;"	s
+numarg	msg.h	/^        int numarg;$/;"	m	struct:msg_control
+open_socket	unixsock.c	/^int open_socket(char *sock_path)$/;"	f
+open_unix_socket	client_unix.c	/^int open_unix_socket(char *path)$/;"	f
+process_data	ipcam_server.c	/^void process_data(char *buf,int size)$/;"	f
+pwm_w0	ipcam_server.c	/^int pwm_w0=1480,pwm_w1=1480;$/;"	v
+pwm_w1	ipcam_server.c	/^int pwm_w0=1480,pwm_w1=1480;$/;"	v
+restart	ipcam_server.c	/^int restart(void *arg)$/;"	f
+send_cmd	client_unix.c	/^int send_cmd (int sockfd,int cmd,int h,int v)$/;"	f
+set_pwm	ipcam_server.c	/^int set_pwm(int h,int v)$/;"	f
+showclient	unixsock.c	/^void  showclient() $/;"	f
+status	msg.h	/^     enum STATUS status; $/;"	m	struct:msg_report	typeref:enum:msg_report::STATUS
+turn_down	ipcam_server.c	/^int turn_down(void *arg)$/;"	f
+turn_left	ipcam_server.c	/^int turn_left(void *arg)$/;"	f
+turn_right	ipcam_server.c	/^int turn_right(void *arg)$/;"	f
+turn_up	ipcam_server.c	/^int turn_up(void *arg)$/;"	f
+vertical	msg.h	/^  int vertical;$/;"	m	struct:__anon2

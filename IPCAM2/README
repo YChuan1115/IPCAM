@@ -1,0 +1,43 @@
+
+
+
+mjpg-streamer-r631
+------------------
+	Web IP Camera Stream Server
+
+	Install:
+		sudo apt-get install libjpeg8-dev imagemagick 
+		sudo apt-get install libv4l-dev
+		sudo ln -s /usr/include/libv4l1-videodev.h /usr/include/linux/videodev.h
+		cd ./mjpg-streamer-r631
+		suod make
+	
+	Run Server:
+		cd ./mjpg-streamer-r631
+		sudo sh start_mjpg.sh
+	
+
+
+readkey
+------------------
+	Requirement:
+		install bcm2835 C Library
+		sudo modprobe i2d-dev
+		PCA9685 module:
+			Base Servo at Channel 1
+			TOP  Servo at Channel 2
+
+	The Server Controlling the Servo via I2C-PCA9685
+	The Bottom Servo is connect to the PWM channel 1 of PCA9685 
+	The Top    Servo is connect to the PWM channel 2 of PCA9685 
+
+	Install:
+		cd ./readkey
+		sudo make 
+		sudo cp ./josephtest /usr/bin/
+
+	Run:
+		sudo ./ipcam
+
+------------------
+	you can open the web browser to visit "http://<raspberry pi ip>:8080/"
